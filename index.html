@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8"
         <title>Барбершоп "Бородинский"</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header class="main-header">
@@ -15,7 +15,7 @@
                     <li><a href="info.html">Информация</a></li>
                     <li><a href="news.html">Новости</a></li>
                     <li><a href="price.html">Прайс-лист</a></li>
-                    <li><a href="shop.html">Магазины</a></li>
+                    <li><a href="catalog.html">Магазины</a></li>
                     <li><a href="contacts.html">Контакты</a></li>
                 </ul>
                 <ul class="user-navigation">
@@ -50,12 +50,82 @@
                 <ul class="news-list">
                     <li class="news-item">
                         <p>Нам на конец завезли Ягермайстер! Теперь вы можите проаустить стаканчик во воремя стрижки</p>
+                        <time datetime="2018-06-11">11 июня</time>
+                    </li>
+                    <li class="news-item">
+                        <p>В нашей команде пополнение, Борис "Бритва" Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
+                        <time datetime="2018-07-15">15 июля</time>
                     </li>
                 </ul>
-            
+                <a class="button" href="news.html">Все новости</a>
             </section>
             
+            <section class="gallery">
+                <h2>Фотогалерея</h2>
+                <figure class="gallery-content">
+                    <a href="#"><img src="img/zal.jpg" width="286" height="164" alt="Наш зал"></a>
+                    <span class="button gallery-button gallery-button-back">Назад</span>
+                    <span class="button gallery-button gallery-button-next">Вперед</span>
+                </figure>
+            </section>
             
+            <section class="contacts">
+                <h2>Контакты</h2>
+                <p>
+                    Барбершоп Бородинский<br>
+                    Адрес: г.Санкт-Петербург, б.Конюшенная, д.19/8<br>
+                    телефон: +7(495)666-02-66
+                </p>
+                <p>
+                    Время работы:<br>
+                    пн-пт: c 10:00 до 22:00<br>
+                    сб-вс: с 10:00 до 19:00
+                </p>
+                <a class="button" href="map.html">Как проехать</a>
+                <a class="button" href="contacts.html">Обратная связь</a>
+            </section>
+            
+            <section class="appointment">
+                <h2>Записаться</h2>
+                <p class="appointment-info">Укажите желаемую дату и времы и мы свяжимся с вами для подтверждения брони</p>
+            </section>
+            <!-- Здесь будет форма -->
         </main>
+        
+        <footer class="main-footer">
+            <p class="footer-contacts">
+                Барбершоп Бородинский<br>
+                Адрес: г.Санкт-Петербург, б.Конюшенная, д.19/8<br>
+                <a href="map.html">Как нас найти</a><br>
+                телефон: +7(495)666-02-66
+            </p>
+            <div class="footer-social">
+                <b>Давайте дружить!</b>
+                <ul>
+                    <li><a class="social-button" href="#">Вконтакте</a></li>
+                    <li><a class="social-button" href="#">Фейсбук</a></li>
+                    <li><a class="social-button" href="#">Инстаграм</a></li>
+                </ul>
+            </div>
+            <p class="footer-copyright">
+                <b>Разработано:</b>
+                <a class="button" href="academy.com">Академия</a>
+            </p>
+        </footer>
+        
+        
+        <section class="modal modal-login">
+            <h2>Личный кабинет</h2>
+            <p>Введите пожалуйста свой логин и пароль</p>
+            <!-- здесь будет форма входа -->
+            <a class="login button" href="cabinet.html">Войти</a>
+            <span class="modal-close">х</span>
+        </section>
+        
+        <section class="modal modal-map">
+            <h2 class="visually-hidden">Карта</h2>
+            <img src="img/map.jpg" alt="схема проезда">
+            <span class="modal-close">x</span>
+        </section>
     </body>
 </html>
