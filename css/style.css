@@ -3,6 +3,7 @@ body{
 vertical-align: middle;
 font-variant-caps: all-small-caps;
 font-stretch: bold;
+font-weight: 700;
 }
 
 
@@ -103,13 +104,323 @@ color: white;
     margin-right: auto;
     margin-left: auto;
     list-style: none;
+    justify-content: space-around;
 }
 
-.featires-item {
-align-content: center;    
+.features-item {
+width: 280px;  
+align-content: center;
 }
 
-.featires-item h3{
-align-content: center; 
+.features-item img{
+margin-left: auto;
+
+}
+
+.features-item   h3{
+text-align: center; 
+    
     font-size: 30pt;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.features-item   p{
+text-align: center; 
+    
+    font-size: 14pt;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center {
+    display: block;
+    margin: 0px auto;
+    
+}
+
+.news_gallery {
+    background-color: white;
+    background-image: url(../img/barbershop-index.png);
+    color: black;
+    display: flex;
+    flex-direction: row;
+    width: 940px;
+    height: 419px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+}
+
+.news {
+    
+    width: 390px;
+    
+}
+
+.news h2{
+    margin-left: 30px;
+    font-size: 30px;
+    font-stretch: bold;  
+}
+
+.news-list {
+    padding: 0px;
+    margin: 0px;
+   list-style: none; 
+}
+
+
+
+.news-item p{
+    margin-left: 30px;
+    font-size: 14pt;
+    font-stretch: bold;      
+
+}
+
+time{
+ font-variant-caps: normal; 
+    margin-left: 30px;
+}
+
+.gallery {
+    width: 390px;
+}
+
+.gallery h2{
+    margin-left: 50px;
+    font-size: 30px;
+    font-stretch: bold;  
+}
+
+.gallery-button {
+    width: 140px;
+    height: 44px;
+    background-color: black;
+    color: white;
+    font-size: 14pt;
+    font-stretch: bold;  
+    font-variant-caps: all-small-caps;
+}
+
+.gallery-content {
+    margin-left: 50px;
+    display: block;
+    
+}
+
+.gallery-button-back {
+    margin-right: 10px;
+    margin-top: 50px;
+    
+}
+
+.news-button {
+   width: 140px;
+    height: 44px;
+    background-color: black;
+    color: white;  
+    list-style: none;
+     display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14pt;
+    margin-left: 30px;
+      
+}
+
+.news-button a{
+    
+    margin-top: 20px;
+    background-color: black;
+    color: white;  
+    text-align: center;
+    text-decoration: none;
+    font-size: 14pt;
+    font-stretch: bold;  
+    font-variant-caps: all-small-caps;
+    vertical-align: middle;
+}
+
+.news-item {
+    margin-bottom: 20px;
+}
+
+.news-item p {
+   margin-bottom: 5px; 
+}
+
+.contacts_appointment {
+        background-color: white;
+    background-image: url(../img/barbershop-index.png);
+    color: black;
+    display: flex;
+    flex-direction: row;
+    width: 940px;
+    height: 419px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: space-around;
+}
+
+.contacts h2,
+.appointment h2{
+       font-size: 30pt;
+    font-stretch: bold;  
+    font-variant-caps: all-small-caps; 
+}
+
+.contacts {
+    width: 50%;
+    margin-left: 70px;
+}
+
+.contacts p{
+    font-size: 14pt;
+}
+
+.button-map {
+    background-color: black;
+    color: white;
+    width: 144px;
+    height: 43px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+     margin: 0px;
+    padding: 0px;
+    font-size: 14pt;
+}
+
+.button-contacts {
+    margin: 0px;
+    padding: 0px;
+      background-color: black;
+    color: white;
+    width: 144px;
+    height: 43px;
+     display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14pt;
+      margin: 0px;
+    padding: 0px;
+    
+}
+
+.button-contacts a,
+.button-map a
+{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14pt;
+    font-stretch: bold;  
+    font-variant-caps: all-small-caps;    
+}
+
+.appointment {
+    width: 300px;
+    margin-right: 70px;
+}
+
+.appointment p{
+      font-size: 14pt;
+}
+
+.main-footer {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    background-image: url('../img/barbershop-footer.png');
+    
+    
+}
+
+.appointment-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-indent: 20px;
+    
+}
+
+.button-submit {
+  margin: 0px;
+    padding: 0px;
+      background-color: black;
+    color: white;
+    width: 300px;
+    height: 43px;
+     display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14pt;
+      margin: 0px;
+    padding: 0px;  
+    font-variant-caps: all-petite-caps;
+}
+
+.input-form {
+width: 140px;
+height: 43px;
+border: 2px solid black; 
+text-align: justify;
+
+}
+
+.footer-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    background-image: url('../img/barbershop-footer.png');
+    width: 940px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-contacts {
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+}
+
+.footer-contacts a{
+    font-size: 14px;
+    color: white;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.social-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: 160px;
+}
+
+.social-button {
+    display: flex;
+    height: 43px;
+    width: 43px;
+    background-color: black;
+    color: white;
+    margin-right: 5px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
 }
