@@ -11,6 +11,8 @@ font-weight: 700;
     display: flex;
     flex-direction: column;
     border-color: black;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .site-navigation {
@@ -33,10 +35,11 @@ font-family: 'PT Sans Narrow',  sans-serif;
 vertical-align: middle;
 font-variant-caps: all-small-caps;
 font-stretch: bold;
+align-items: center;    
 }
 
 .site-navigation li{
-     vertical-align: middle;
+    align-items: center;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -87,8 +90,8 @@ color: white;
     min-height: 36px;
     color: white;
     list-style: none;
-    justify-content: space-around;
-    
+    justify-content: space-between;
+    width: 940px;
  
 }
 
@@ -154,7 +157,7 @@ text-align: center;
 
 .news {
     
-    width: 390px;
+    width: 350px;
     
 }
 
@@ -185,14 +188,10 @@ time{
 }
 
 .gallery {
-    width: 390px;
+    width: 300px;
 }
 
-.gallery h2{
-    margin-left: 50px;
-    font-size: 30px;
-    font-stretch: bold;  
-}
+
 
 .gallery-button {
     width: 140px;
@@ -200,12 +199,15 @@ time{
     background-color: black;
     color: white;
     font-size: 14pt;
-    font-stretch: bold;  
+    font-weight: 700;  
     font-variant-caps: all-small-caps;
+    box-shadow: none;
+    border: 0;
 }
 
 .gallery-content {
-    margin-left: 50px;
+   margin: 0px;
+    padding: 0px;
     display: block;
     
 }
@@ -222,11 +224,12 @@ time{
     background-color: black;
     color: white;  
     list-style: none;
-     display: inline-block;
+    display: inline-block;
     text-align: center;
-    vertical-align: middle;
+    align-items: center;
     font-size: 14pt;
     margin-left: 30px;
+    font-weight: 700;
       
 }
 
@@ -238,7 +241,7 @@ time{
     text-align: center;
     text-decoration: none;
     font-size: 14pt;
-    font-stretch: bold;  
+    font-weight: 700;  
     font-variant-caps: all-small-caps;
     vertical-align: middle;
 }
@@ -266,11 +269,15 @@ time{
     justify-content: space-around;
 }
 
+.gallery h2,
+.news h2,
 .contacts h2,
 .appointment h2{
        font-size: 30pt;
     font-stretch: bold;  
     font-variant-caps: all-small-caps; 
+    margin-bottom: 20px;
+    
 }
 
 .contacts {
@@ -423,4 +430,195 @@ text-align: justify;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+}
+
+.main-header {
+ 
+}
+
+.main-string-header {
+display: flex;
+    flex-direction: row;
+      background-color: black;
+    min-height: 36px;
+    color: white;
+    list-style: none;
+    justify-content: center;
+    
+}
+
+
+
+
+
+.main-page-container {
+	
+display: flex;
+background-color: white;
+background-image: url("../img/barbershop-index.png");
+color: black;
+}
+
+.main-container {
+	display: flex;
+	width: 940px;
+	justify-content: space-between;
+	margin-left: auto;
+	margin-right: auto;
+	flex-direction: column;
+}
+
+.main-container h1{
+	font-size: 30px;
+	margin: 0px;
+	padding: 0px;
+	margin-left: 40px;
+}
+
+.breddcrumbs {
+	display: inline-flex;
+	list-style: none;
+	font-size: 14pt;
+	align-content: center;
+
+}
+
+.breddcrumbs li{
+margin-right: 15px;	
+	
+}
+
+
+.breddcrumbs li a{
+text-decoration: none;
+color:black;
+}
+
+.breadcrumds-current {
+	color: #aba9a7;
+}
+
+.filters-catolog {
+	display: flex;
+	flex-direction: row;                         
+}
+
+.filters {
+	width: 300px;
+}
+
+.header-of-main {
+	font-size: 24pt;
+}
+
+.catalog-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	list-style: none;
+	
+}
+
+.catalog-item {
+	width: 220px;
+	height: 285px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	color: black;
+	background-color: white;
+	box-shadow: 0px 0px 10px 5px #ebe9e6;
+	padding: 0px;
+}
+.catalog-item p{
+	margin: 0px;
+	padding: 0px;
+}
+.catalog-item a{
+	margin: 0px;
+	padding: 0px;
+}
+
+.catalog-category {
+	margin-left: 10px;
+	font-style: normal;
+	font-variant-caps: normal;
+	margin-bottom: 0px;
+	line-height: 14pt;
+}
+
+.catalog-item-title {
+	margin: 0px;
+	padding: 0px;
+	margin-left: 10px;
+	font-weight: 700;
+	font-size: 14pt;
+	font-variant-caps: all-petite-caps;
+	line-height: 14pt;
+	
+}
+
+.image-catalog {
+	margin-top: 0px;
+	margin-bottom: -20px;
+}
+catalog-item a{
+	margin: 0px;
+}
+
+.catalog-item-price {
+	width: 187px;
+	height: 43px;
+	background-color: #e5e5e5;
+	color: black;
+	margin-bottom: 30px;
+	margin-left:auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: row;
+justify-content: space-between;
+	align-content: center;
+	font-size: 14px;
+}
+
+b.price-holder {
+	display: block;
+	font-size: 14px;
+	margin le: auto;
+}
+
+.button {
+	
+	margin: 0px;
+	padding: 0px;
+	width: 78px;
+	height: 43px;
+	background-color: black;
+	color: white;
+	margin-right: 0px;
+	font-size: 14pt;
+	font-weight: 700;
+	font-variant-caps: all-petite-caps;
+	text-decoration: none;
+	vertical-align: middle;
+	text-align: center;
+}
+
+
+
+.catalog-button-box {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: -5px;
+}
+
+.price-item {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	font-size: 14pt;
+	width: 109px;
+	font-weight: 700;
 }
