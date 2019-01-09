@@ -19,10 +19,14 @@ font-weight: 700;
   display: flex;
     flex-direction: row; 
     background-color: black;
-    min-height: 36px;
+    min-height: 73px;
     color: white;
     list-style: none;
     order: 1;
+	  margin-left: auto;
+    margin-right: auto;
+	margin: 0px;
+	padding: 0px;
    }
 
 .site-navigation li a {
@@ -86,12 +90,15 @@ color: white;
 .string-navigation {
     display: flex;
     flex-direction: row;
-      background-color: black;
-    min-height: 36px;
+     background-color: black;
+    min-height: 73px;
     color: white;
     list-style: none;
     justify-content: space-between;
     width: 940px;
+	margin: 0px;
+	padding: 0px;
+	
  
 }
 
@@ -273,6 +280,7 @@ time{
 .news h2,
 .contacts h2,
 .appointment h2{
+
        font-size: 30pt;
     font-stretch: bold;  
     font-variant-caps: all-small-caps; 
@@ -440,10 +448,13 @@ text-align: justify;
 display: flex;
     flex-direction: row;
       background-color: black;
-    min-height: 36px;
+    min-height: 73px;
     color: white;
     list-style: none;
     justify-content: center;
+	margin: 0px;
+	padding: 0px;
+	
     
 }
 
@@ -459,12 +470,17 @@ background-image: url("../img/barbershop-index.png");
 color: black;
 }
 
+
+
 .main-container {
+	margin: 0px;
+	padding: 0px;
 	display: flex;
 	width: 940px;
 	justify-content: space-between;
-	margin-left: auto;
-	margin-right: auto;
+	margin-left:  auto;
+	margin-right:  auto;
+	margin-top: 30px;
 	flex-direction: column;
 }
 
@@ -472,16 +488,19 @@ color: black;
 	font-size: 30px;
 	margin: 0px;
 	padding: 0px;
-	margin-left: 40px;
+	
 }
 
 .breddcrumbs {
+	margin-left: 0px;
 	display: inline-flex;
 	list-style: none;
 	font-size: 14pt;
-	align-content: center;
-
+	align-content: flex-start;
+	padding: 0px;
 }
+
+
 
 .breddcrumbs li{
 margin-right: 15px;	
@@ -500,21 +519,27 @@ color:black;
 
 .filters-catolog {
 	display: flex;
-	flex-direction: row;                         
+	flex-direction: row; 
+	justify-content: space-between;
+	
+	
 }
 
 .filters {
-	width: 300px;
+	margin: 0px;
+	width: 290px;
 }
 
 .header-of-main {
 	font-size: 24pt;
+	
 }
 
 .catalog-list {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: flex-start;
+	align-content: flex-start;
 	flex-wrap: wrap;
 	list-style: none;
 	
@@ -523,7 +548,7 @@ color:black;
 .catalog-item {
 	width: 220px;
 	height: 285px;
-	margin-right: 10px;
+	margin-right: 20px;
 	margin-bottom: 20px;
 	color: black;
 	background-color: white;
@@ -540,22 +565,27 @@ color:black;
 }
 
 .catalog-category {
-	margin-left: 10px;
+	margin-top: 13px;
+	display: block;
+	margin-left: 15px;
 	font-style: normal;
 	font-variant-caps: normal;
-	margin-bottom: 0px;
-	line-height: 14pt;
+	margin-bottom: 10px;
+	line-height: 0.5em;
+	font-weight: 700;
+	font-size: 14pt;
 }
 
 .catalog-item-title {
-	margin: 0px;
+	display: block;
+	margin-top : 5px;
 	padding: 0px;
-	margin-left: 10px;
+	margin-left: 15px;
 	font-weight: 700;
 	font-size: 14pt;
 	font-variant-caps: all-petite-caps;
-	line-height: 14pt;
-	
+	line-height: 0.5em;
+	margin-bottom: 5px;
 }
 
 .image-catalog {
@@ -565,6 +595,13 @@ color:black;
 catalog-item a{
 	margin: 0px;
 }
+
+
+.item-description .catalog-item-price{
+margin-left: 0px;	
+margin-top: 20px;
+}
+
 
 .catalog-item-price {
 	width: 187px;
@@ -576,7 +613,7 @@ catalog-item a{
 	margin-right: auto;
 	display: flex;
 	flex-direction: row;
-justify-content: space-between;
+	justify-content: space-between;
 	align-content: center;
 	font-size: 14px;
 }
@@ -588,20 +625,21 @@ b.price-holder {
 }
 
 .button {
-	
-	margin: 0px;
-	padding: 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	width: 78px;
 	height: 43px;
 	background-color: black;
 	color: white;
-	margin-right: 0px;
-	font-size: 14pt;
+		font-size: 14pt;
 	font-weight: 700;
 	font-variant-caps: all-petite-caps;
 	text-decoration: none;
 	vertical-align: middle;
-	text-align: center;
+	padding: 0px;
+	
 }
 
 
@@ -621,4 +659,256 @@ b.price-holder {
 	font-size: 14pt;
 	width: 109px;
 	font-weight: 700;
+}
+
+
+
+.selector-of-goods {
+	display: block;
+	margin-bottom: 10px;
+	font-size: 14pt;
+	line-height: 18pt;
+	
+
+}
+
+.pagination-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-bottom: 50px;
+	margin-top: 40px;
+}
+
+.pagination-item {
+	display: flex;
+	width: 43px;
+	height: 43px;
+	background-color: black;
+	color: white;
+	justify-content: center;
+	align-content: center;
+	margin-right: 10px;
+	align-items: center;
+}
+.pagination-item a{
+
+	color: white;
+	font-size: 14pt;
+	text-decoration: none;
+}
+
+.pagination-item-current {
+		display: flex;
+	width: 43px;
+	height: 43px;
+	background-color: white;
+	justify-content: center;
+	align-content: center;
+	margin-right: 10px;
+	align-items: center;
+}
+.pagination-item-current a{
+		color: black;
+	font-size: 14pt;
+	text-decoration: none;
+}
+
+.login-link {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+}
+
+.login-img {
+	display: block;
+	margin: auto;
+	margin-top: 13px;
+}
+
+.login-link-blink {
+	display: block;
+	margin: auto;
+	margin-left: 14px;
+	margin-top: 4px;
+}
+
+
+	
+}
+
+.second-navation {
+	
+}
+
+.big-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	height: 50px;
+	margin-bottom: 30px;
+}
+
+.big-header h6 {
+	font-size: 48pt;
+}
+
+.shaving-aid-list {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	font-size: 14pt;
+}
+
+.square-form {
+	display: inline-block;
+	margin-bottom: -2px;
+	
+	margin-right: 10px;
+}
+
+.shaving-aid-masters-price {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	
+}
+
+
+.shaving-aid-list h2,
+.masters-price h2{
+	font-size: 24pt;
+	margin-top: 10px;
+	display: block;
+}
+
+.masters-price-table {
+	border: 1px solid black;
+	border-collapse: collapse;
+
+}
+
+.cell {
+	width: 231px;
+	height: 43px;
+	border: 2px solid black;
+	padding-left: 10px;
+	
+}
+
+.cell-right {
+	border-left: 1px solid black;
+	text-align: center;
+	
+}
+
+.includes{
+display: block;
+margin-bottom: 5px;
+}
+
+.words-about-us h2{
+	font-size: 24pt;
+}
+
+.words-about-us-box {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-content: flex-start;
+}
+
+.first-words,
+.second-words{
+	width: 380px;
+	font-size: 14pt;
+	margin-right: 105px;
+	margin-bottom: 50px;
+}
+
+li.selected-page a{
+margin-top: 0px;
+display: flex;
+height: 73px;
+border-bottom: 2px solid white;
+text-align: center;
+align-content: center;
+align-items: center;
+
+}
+
+.page-title h1{
+	margin: 0px;
+}
+
+.item-box {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin: 0px;
+	padding: 0px;
+}
+
+.item-image-box {
+		display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 0px;
+	padding: 0px;
+
+}
+
+.item-image-prevew-box {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-top: 20px;
+	width: 460px;
+}
+
+.item-description {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 380px;
+	margin-top: 50px;
+	}
+
+.item-description h2{
+	font-size: 24pt;
+}
+
+.item-description p{
+	font-size: 14pt;
+	margin-top: 50px;
+}
+
+.descrintion-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 380px;
+	
+}
+
+.vendor-code {
+	color: #aeaeae;
+	font-size: 14pt;
+}
+
+.are-available {
+	font-size: 14pt;
+}
+
+.The-kit-includes {
+	margin: 0px;
+	padding: 0px;
 }
